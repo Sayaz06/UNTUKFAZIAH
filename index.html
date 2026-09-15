@@ -2226,7 +2226,7 @@ body.dark-mode {
 <div class="topbar" style="margin-top:4px;">
           <div style="display: flex; gap: 4px; flex-wrap: wrap;">
             <button id="btn-back-home-from-tasbih" class="btn btn-secondary btn-sm">← Menu</button>
-            <button id="btn-toggle-rutin" class="btn btn-secondary btn-sm">Rutin: OFF</button>
+            <button id="btn-toggle-rutin" class="btn btn-secondary btn-sm">Wirid: OFF</button>
             <button id="btn-toggle-quran" class="btn btn-secondary btn-sm" style="border-color:#10b981;">📖 Quran: OFF</button>
             <button id="btn-toggle-doa" class="btn btn-secondary btn-sm" style="border-color:#f59e0b;">🤲 Doa: OFF</button>
             <button id="btn-toggle-hadis" class="btn btn-secondary btn-sm" style="border-color:#ec4899;">📚 Hadis: OFF</button>
@@ -2236,7 +2236,7 @@ body.dark-mode {
           </div>
           <div style="text-align:right; display:flex; gap:6px; flex-direction:column; align-items:flex-end;">
             <div style="display:flex; gap:6px;">
-              <button id="btn-go-routine-times" class="btn btn-secondary btn-sm" style="border-color:var(--grad1);">Laci Rutin</button>
+              <button id="btn-go-routine-times" class="btn btn-secondary btn-sm" style="border-color:var(--grad1);">Laci Wirid</button>
               <button id="btn-go-quran-times" class="btn btn-secondary btn-sm" style="border-color:#10b981;">📖 Laci Quran</button>
               <button id="btn-go-doa-times" class="btn btn-secondary btn-sm" style="border-color:#f59e0b;">🤲 Laci Doa</button>
               <button id="btn-go-hadis-times" class="btn btn-secondary btn-sm" style="border-color:#ec4899;">📚 Laci Hadis</button>
@@ -2570,13 +2570,13 @@ body.dark-mode {
       <section id="section-routine-times" class="section">
         <div class="topbar">
           <button id="btn-back-tasbih-routine" class="btn btn-secondary btn-sm">← Tasbih</button>
-          <div class="topbar-title">Waktu Rutin</div>
+          <div class="topbar-title">Waktu Wirid</div>
         </div>
         <div style="font-size: 0.75rem; color: var(--subtext); text-align: center; margin-bottom: 8px;">
-          Tanda (tick) SATU kotak sahaja untuk aktifkan rutin ini.
+          Tanda (tick) SATU kotak sahaja untuk aktifkan wirid ini.
         </div>
 <div style="display:flex;gap:8px;margin-top:8px;">
-          <button id="btn-add-routine-time" class="btn btn-sm" style="flex:1;">Tambah Waktu Rutin</button>
+          <button id="btn-add-routine-time" class="btn btn-sm" style="flex:1;">Tambah Waktu Wirid</button>
           <button id="btn-trash-rutin" class="btn btn-secondary btn-sm btn-trash">🗑️ Tong Sampah</button>
         </div>
         <div class="list mt-8" id="routine-times-list" style="padding: 10px;"></div>
@@ -2584,9 +2584,9 @@ body.dark-mode {
 
       <section id="section-routine-drawers" class="section">
         <div class="topbar">
-          <button id="btn-back-routine-drawer" class="btn btn-secondary btn-sm">← Waktu Rutin</button>
+          <button id="btn-back-routine-drawer" class="btn btn-secondary btn-sm">← Waktu Wirid</button>
           <div style="text-align: right;">
-            <div class="topbar-title">Laci Zikir Rutin</div>
+            <div class="topbar-title">Laci Zikir Wirid</div>
             <div class="topbar-sub" id="parent-routine-time-name" style="color:var(--grad2); font-weight:bold;"></div>
           </div>
         </div>
@@ -3116,12 +3116,12 @@ body.dark-mode {
             <div id="champ-tick-perjanjian" style="width:24px;height:24px;border:2px solid var(--border-mid);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.9rem;"></div>
           </div>
 
-          <!-- Laci Rutin -->
+          <!-- Laci Wirid -->
           <div id="champ-row-rutin" style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border-soft);cursor:pointer;">
             <div style="display:flex;align-items:center;gap:10px;">
               <span style="font-size:1.1rem;">🔄</span>
               <div>
-                <div style="font-size:0.95rem;font-weight:500;color:var(--text);">Laci Rutin</div>
+                <div style="font-size:0.95rem;font-weight:500;color:var(--text);">Laci Wirid</div>
                 <div style="font-size:0.72rem;color:var(--subtext);">routine_drawers</div>
               </div>
             </div>
@@ -3340,7 +3340,7 @@ body.dark-mode {
           <div style="font-size:0.8rem; line-height:1.5; color:var(--text);">
             <strong>• Format Kamus (Laci Fakta):</strong><br>
             <span style="color:var(--subtext);">Guna format <code>Perkataan = Maksud</code> dalam satu kotak.<br>(Cth: Alhamdulillah = Segala Puji Bagi Allah)</span><br><br>
-            <strong>• Format Rutin Wirid:</strong><br>
+            <strong>• Format Wirid:</strong><br>
             <span style="color:var(--subtext);">Zikir, Target Mini, dan Maksud kini telah <b>diasingkan ke dalam 3 kotak berbeza</b>.</span><br><br>
             <strong>• 5 Mode Pembelajaran (Fakta):</strong><br>
             <span style="color:var(--subtext);">1. Normal: Klik kotak paparan untuk lihat terjemahan.<br>
@@ -4216,7 +4216,7 @@ if (snap.exists()) {
           factMode = false;
           routineMode = false;
           btnToggleFact?.classList.remove('btn-active');
-          btnToggleRutin.textContent = 'Rutin: OFF';
+          btnToggleRutin.textContent = 'Wirid: OFF';
           btnToggleRutin.classList.remove('btn-active');
           ['quran','doa','hadis'].forEach(s => {
             const b = document.getElementById(`btn-toggle-${s}`);
@@ -4351,7 +4351,7 @@ if (snap.exists()) {
           factMode = false;
           routineMode = false;
           btnToggleFact?.classList.remove('btn-active');
-          btnToggleRutin.textContent = 'Rutin: OFF';
+          btnToggleRutin.textContent = 'Wirid: OFF';
           btnToggleRutin.classList.remove('btn-active');
           ['quran','doa','hadis'].forEach(s => {
             const b = document.getElementById(`btn-toggle-${s}`);
@@ -4481,7 +4481,7 @@ if (!queueMode) {
           factMode = false;
           routineMode = false;
           btnToggleFact?.classList.remove('btn-active');
-          btnToggleRutin.textContent = 'Rutin: OFF';
+          btnToggleRutin.textContent = 'Wirid: OFF';
           btnToggleRutin.classList.remove('btn-active');
           ['quran','doa','hadis'].forEach(s => {
             const b = document.getElementById(`btn-toggle-${s}`);
@@ -4793,7 +4793,7 @@ async function ensureTodayModeTasbih(mode) {
       });
     }
     function getModeLabel(src) {
-      return {rutin:'Rutin', quran:'📖 Quran', doa:'🤲 Doa', hadis:'📚 Hadis'}[src] || src;
+      return {rutin:'Wirid', quran:'📖 Quran', doa:'🤲 Doa', hadis:'📚 Hadis'}[src] || src;
     }
 
 function getRoutineSrc() {
@@ -4829,7 +4829,7 @@ function activateRoutineMode(src) {
 // Reset semua
       factMode = false; routineMode = false; bahasaMode = false;
       btnToggleFact?.classList.remove("btn-active");
-      btnToggleRutin.textContent="Rutin: OFF"; btnToggleRutin.classList.remove("btn-active");
+      btnToggleRutin.textContent="Wirid: OFF"; btnToggleRutin.classList.remove("btn-active");
       const btnBahasaToggle = document.getElementById('btn-toggle-bahasa');
       if (btnBahasaToggle) { btnBahasaToggle.textContent="📝 Bahasa: OFF"; btnBahasaToggle.classList.remove("btn-active"); }
       const cbBahasa = document.getElementById('btn-toggle-bahasa-cb');
@@ -6714,12 +6714,12 @@ return;
 
       if (routineMode && allRoutines.length > 0) {
         const curRtn = allRoutines[currentRoutineIndex];
-        document.querySelector(".counter-label").textContent = curRtn.isTamat ? "Rutin Tamat" : "Target Mini Zikir";
+        document.querySelector(".counter-label").textContent = curRtn.isTamat ? "Wirid Tamat" : "Target Mini Zikir";
         tasbihCountEl.textContent = currentRoutineTarget;
         tasbihCountEl.style.fontSize = "";
         tasbihCountEl.style.color = "";
         tasbihStatusEl.textContent = `Sapu/Enter (Baki Harian: ${remaining})`;
-        tasbihStatusChip.textContent = `Mode Rutin Aktif`;
+        tasbihStatusChip.textContent = `Mode Wirid Aktif`;
       } else if (factMode) {
         document.querySelector(".counter-label").textContent = "📚 Mode Fakta";
         tasbihCountEl.textContent = "Mode Fakta tidak mengurangkan countdown tasbih harian";
@@ -8068,7 +8068,7 @@ function pushKindleSession() {
     
       if (dataSource.length === 0) {
         factTitleEl.textContent = "";
-        factContentEl.textContent = routineMode ? "Tiada rutin aktif. Sila tick SATU waktu." : "Tiada topik aktif. Sila tick SATU topik.";
+        factContentEl.textContent = routineMode ? "Tiada wirid aktif. Sila tick SATU waktu." : "Tiada topik aktif. Sila tick SATU topik.";
         factHintEl.style.display = 'none';
         btnSpeak.style.display = 'none';
         btnCopyFact.style.display = 'none';
@@ -9768,11 +9768,11 @@ bukaCropTool(file, async (blob) => {
         });
         
 div.querySelector(".btn-del-rtn").addEventListener("click", async () => {
-          if (!confirm("Padam waktu rutin ini?\n\nData akan disimpan dalam Tong Sampah 30 hari.")) return;
-          await hantarKeTrashUniversal('routine_times', data.id, data, data.name || 'Waktu Rutin');
+          if (!confirm("Padam waktu wirid ini?\n\nData akan disimpan dalam Tong Sampah 30 hari.")) return;
+          await hantarKeTrashUniversal('routine_times', data.id, data, data.name || 'Waktu Wirid');
           const drawersToDelete = allRoutineDrawers.filter(d => d.timeId === data.id);
           for (const dr of drawersToDelete)
-            await hantarKeTrashUniversal('routine_drawers', dr.id, dr, dr.title || 'Laci Rutin');
+            await hantarKeTrashUniversal('routine_drawers', dr.id, dr, dr.title || 'Laci Wirid');
           let i = 0;
           while (i < drawersToDelete.length) {
             const batch = writeBatch(db);
@@ -9877,7 +9877,7 @@ const isEmpty = !data.zikir || data.zikir.trim() === '';
 
 div.querySelector(".btn-del-laci").addEventListener("click", async () => {
           if (!confirm("Padam laci zikir ini?\n\nData akan disimpan dalam Tong Sampah 30 hari.")) return;
-          await hantarKeTrashUniversal('routine_drawers', data.id, data, data.title || 'Laci Rutin');
+          await hantarKeTrashUniversal('routine_drawers', data.id, data, data.title || 'Laci Wirid');
           await deleteDoc(doc(db, "users", currentUser.uid, "routine_drawers", data.id));
           showToast('🗑️ Disimpan dalam Tong Sampah 30 hari.');
         });
@@ -10352,7 +10352,7 @@ addDoc(collection(db, "users", currentUser.uid, "routine_drawers"), { title: "~"
 let janaPukalConfig = { coll: 'routine_drawers', timeId: null };
 
     document.getElementById('btn-open-jana-pukal').addEventListener('click', () => {
-      if (!currentRoutineTimeId) { showToast('Sila buka waktu rutin dahulu.'); return; }
+      if (!currentRoutineTimeId) { showToast('Sila buka waktu wirid dahulu.'); return; }
       janaPukalConfig = { coll: 'routine_drawers', timeId: currentRoutineTimeId };
       bulkPrefix.value = ''; bulkStart.value = ''; bulkEnd.value = '';
       bulkPreview.textContent = '';
@@ -10522,7 +10522,7 @@ document.getElementById('btn-toggle-fakta-sr')?.addEventListener('click', () => 
 if (factMode && (routineMode || bahasaMode)) {
          routineMode = false;
          bahasaMode = false;
-         btnToggleRutin.textContent = "Rutin: OFF";
+         btnToggleRutin.textContent = "Wirid: OFF";
          btnToggleRutin.classList.remove("btn-active");
          const btnBhs = document.getElementById('btn-toggle-bahasa');
          if (btnBhs) { btnBhs.textContent="📝 Bahasa: OFF"; btnBhs.classList.remove("btn-active"); }
@@ -16438,10 +16438,10 @@ document.getElementById('btn-export-format-ai')?.addEventListener('click', async
         if (cbEl) cbEl.checked = bahasaMode;
 
         if (bahasaMode) {
-          // Matikan fakta/rutin lain
+          // Matikan fakta/wirid lain
           factMode = false; routineMode = false; bahasaMode = false;
           btnToggleFact?.classList.remove("btn-active");
-          btnToggleRutin.textContent = "Rutin: OFF"; btnToggleRutin.classList.remove("btn-active");
+          btnToggleRutin.textContent = "Wirid: OFF"; btnToggleRutin.classList.remove("btn-active");
           const cbBhs = document.getElementById('btn-toggle-bahasa-cb');
           if (cbBhs) cbBhs.checked = false;
           ['quran','doa','hadis'].forEach(s => {
@@ -21315,7 +21315,7 @@ const SATU_TAHUN = 365 * 24 * 60 * 60 * 1000;
         colls: ['sems','subjects','topics','drawer']
       },
       rutin: {
-        title: '🗑️ Tong Sampah — Laci Rutin',
+        title: '🗑️ Tong Sampah — Laci Wirid',
         colls: ['routine_times','routine_drawers']
       },
       doa: {
@@ -21338,7 +21338,7 @@ bahasa: {
 
     const TRASH_COLL_LABEL = {
       sems: 'Sem/Tahun', subjects: 'Subjek', topics: 'Topik', drawer: 'Laci Fakta',
-      routine_times: 'Waktu Rutin', routine_drawers: 'Laci Zikir',
+      routine_times: 'Waktu Wirid', routine_drawers: 'Laci Zikir',
       doa_times: 'Kategori Doa', doa_drawers: 'Laci Doa',
       hadis_times: 'Kitab/Bab Hadis', hadis_drawers: 'Laci Hadis',
 bahasa_list: 'Bahasa', jenis_kata: 'Jenis Kata', bahasa_drawers: 'Laci Bahasa',
@@ -21486,7 +21486,7 @@ document.getElementById('btn-go-bahasa-times')?.addEventListener('click', () => 
 
     const COLL_LABEL = {
      drawer: 'Laci Fakta', topics: 'Topik',
-      routine_drawers: 'Laci Rutin', quran_drawers: 'Laci Quran',
+      routine_drawers: 'Laci Wirid', quran_drawers: 'Laci Quran',
       doa_drawers: 'Laci Doa', hadis_drawers: 'Laci Hadis'
     };
 
